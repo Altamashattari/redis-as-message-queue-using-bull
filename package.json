@@ -1,0 +1,18 @@
+{
+  "name": "redis-as-message-queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "add": "node addJob.js",
+    "process": "pm2 start process.js -i -1",
+    "monitor": "pm2 logs",
+    "stop": "pm2 kill"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^4.1.0"
+  }
+}
